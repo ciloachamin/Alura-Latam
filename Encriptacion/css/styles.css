@@ -23,13 +23,14 @@ section{
 }
 
 .salida-texto p{
+    background-color: white;
     margin: 10px;
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
 }
 .items:before{
-    content:url(asserts/img/bi_exclamation-circle-fill.svg);
+    content:url(../asserts/img/bi_exclamation-circle-fill.svg);
     margin-right: 5px;
 }
 img {
@@ -63,3 +64,12 @@ textarea::placeholder {
     border-radius: 24px;
     margin: 5px;
 }
+.btn-copiar{
+    background-color: aliceblue;
+    border-color:   #072B61;
+    width: 50vh;
+    height: 10vh;
+    border-radius: 24px;
+    margin: 5px;
+}
+
