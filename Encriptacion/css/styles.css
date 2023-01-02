@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+body{
+    background-color: #E5E5E5;
+    margin-top: 2em;
+}
+main{
+    display: flex;
+    align-items: stretch;
+}
+
+section{
+    margin: 1em;
+}
+.salida-texto{
+    background-color: white;
+    border-radius: 34px;
+    width: 400px;
+    overflow: auto;
+}
+
+.salida-texto p{
+    margin: 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+.items:before{
+    content:url(asserts/img/bi_exclamation-circle-fill.svg);
+    margin-right: 5px;
+}
+img {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+.img-salida{
+    margin-top: 6em;
+}
+textarea{
+    background-color: #E5E5E5;
+    width: 650px;
+    height: 500px;
+    border: none;
+}
+textarea::placeholder {
+    color: #072B61;
+    font-size: 2em;
+    margin-top: 3em;
+}
+  
+.btn{
+    background-color: #072B61;
+    color: aliceblue;
+    border: none;
+    width: 50vh;
+    height: 10vh;
+    border-radius: 24px;
+    margin: 5px;
+}
