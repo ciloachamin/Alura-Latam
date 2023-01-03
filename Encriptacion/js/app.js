@@ -2,27 +2,45 @@ const btnEncrypt = document.getElementById("btn-encriptar");
 const btnDecrypt = document.getElementById("btn-desencriptar");
 const btnCopy=document.getElementById("btn-copiar");
 const inMessage = document.getElementById("textAreas");
-const textEncrypt =document.getElementById("text-encrypt")
+const textEncrypt =document.getElementById("text-result")
 
-
+btnCopy.style.display="none";
 
 btnEncrypt.addEventListener("click", () => {
-    hideElements();
+    hasText();
     textEncrypt.textContent=encrypt(inMessage.value);
     textEncrypt.style.visibility='visible';
+    inMessage.value="";
 });
 
 function hideElements(){
   const elements=document.getElementsByClassName("text-decrypt");
   for (const element of elements) {
-    element.style.visibility = "hidden";
+    element.style.display= "none";
   }
+  btnCopy.style.display="block";
+}
+function showElements(){
+    const elements=document.getElementsByClassName("text-decrypt");
+    for (const element of elements) {
+      element.style.display= "block";
+    }
+    btnCopy.style.display="none";
+}
+
+function hasText() {
+    if (inMessage.value === "") {
+        showElements();
+      }else{
+        hideElements();
+      }
 }
 
 btnDecrypt.addEventListener("click", () => {
-  hideElements();
+  hasText();
   textEncrypt.textContent=decrypt(inMessage.value);
   textEncrypt.style.visibility='visible';
+  inMessage.value="";
 });
 
 btnCopy.addEventListener("click", () => {

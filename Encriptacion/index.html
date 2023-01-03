@@ -14,7 +14,7 @@
             <img src="asserts/img/Logo.png" alt="logo-alura">
         </section>
         <section class="ingreso-texto">
-                <textarea  id="textAreas"  required placeholder="Ingrese su texto aqui"></textarea>
+                <textarea  id="textAreas"  required placeholder="Ingrese su texto aquí"></textarea>
                 <p class="items">Solo letras minúsculas y sin acentos</p>
 
                 <button id="btn-encriptar" class="btn">Encriptar</button>
@@ -22,10 +22,19 @@
 
         </section>
         <section class="salida-texto">
-            <img  class="img-salida text-decrypt" src="asserts/img/Muñeco.svg" alt="Imagen de buscador">
-            <p class="text-decrypt" >Ningún mensaje fue encontrado</p>
-            <p class="text-decrypt" id="text-encrypt">Ingresa el texto que desees encriptar o desencriptar.</p>
-            <button id="btn-copiar" class="btn-copiar">copiar</button>
+            <div class="salida-text">
+               <div class="wrapper">
+                <div id="text-result"></div>
+               </div>
+                <div class="text-decrypt">
+                    <div class="content-img">
+                        <img  class="img-salida text-decrypt" src="asserts/img/Muñeco.svg" alt="Imagen de buscador">
+                    </div>
+                    <p class="text-decrypt" >Ningún mensaje fue encontrado</p>
+                    <p class="text-decrypt">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <button id="btn-copiar" class="btn btn-copiar">Copiar</button>
         </section>
     </main>
     <script src="js/app.js"></script>
